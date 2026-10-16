@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadatak2_simicic</title>
+</head>
+<body>
+    <h1>
+        <a href="zadatak1_simicic.html">Obrazac</a>
+    </h1>
+    <form action="#" method="post">
+        <p>
+            <label for="korisnicko_ime">Korisnicko ime:</label>
+            <input type="text" id="korisnicko_ime" size="25" placeholder="Unesite korisnicko ime">
+        </p>
+        <p>
+            <label for="lozinka">Lozinka:</label>
+            <input type="password" name="lozinka" id="lozinka" size="25" placeholder="Unesite lozinku">
+        </p>
+        <p>
+            <label for="ocjena">Ocjena:</label>
+            <select name="ocjena" id="ocjena">
+                <option value="1">Nedovoljan</option>
+                <option value="2">Dovoljan</option>
+                <option value="3">Dobar</option>
+                <option value="4">Vrlo dobar</option>
+                <option value="5">Izvrstan</option>
+            </select>
+        </p>
+        <p>
+            <label for="komentar">Komentar:</label>
+            <textarea name="komentar" id="komentar" rows="7" cols="40" placeholder="Unesite komentar"></textarea>
+        </p>
+        <fieldset>
+            <legend>Usmena ocjena studenta</legend>
+            <input type="radio" id="komunikativan" name="usmena_ocjena" value="komunikativan">
+            <label for="komunikativan">komunikativan</label><br>
+            <input type="radio" id="samostalan" name="usmena_ocjena" value="samostalan">
+            <label for="samostalan">samostalan</label><br>
+            <input type="radio" id="radisan" name="usmena_ocjena" value="radisan">
+            <label for="radisan">radišan</label><br>
+            <input type="radio" id="nista" name="usmena_ocjena" value="nista" checked>
+            <label for="nista">ništa od navedenog</label>
+        </fieldset>
+        <p>
+        <table>
+            <tr>
+                <td><input type="submit" value="Pošalji"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Poništi"></td>
+            </tr>
+        </table>
+        </p>
+    </form>
+</body>
+</html>
