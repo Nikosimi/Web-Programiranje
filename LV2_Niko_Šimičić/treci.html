@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treći zadatak</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 65% 30%;
+            column-gap: 5%;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        header { 
+            grid-column: 1 / -1;
+            background-color: aliceblue;
+        }
+
+        main { 
+            background-color: antiquewhite;
+        }
+
+        aside { 
+            background-color: aqua;
+        }
+
+        footer { 
+            grid-column: 1 / -1;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <header>Naslov</header>
+    <main>
+        <section>
+            <article>
+                <h2>Naslov članka</h2>
+                <p>Lorem ipsum …</p>
+            </article>
+            <article>
+                <h2>Naslov članka</h2>
+                <p>Lorem ipsum …</p>
+            </article>
+        </section>
+    </main>
+    <aside>Izbornik</aside>
+    <footer>Podnožje</footer>
+</body>
+</html>
