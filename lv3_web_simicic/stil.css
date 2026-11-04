@@ -1,0 +1,35 @@
+.table thead th {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.table tbody tr:nth-child(odd) td{
+    background-color: white;
+}
+
+.table tbody tr:nth-child(even) td{
+    background-color: lightblue;
+}
+
+.table tbody tr:hover td{
+    background-color: gray;
+}
+
+/*main > p:first-child {
+    font-size: 1.25rem;
+    color: red;
+}
+*/
+
+main > p:first-of-type {
+    font-size: 1.25rem;
+    color: red;
+}
+
+@media (max-width: 991.98px){
+    main > .row img {
+        margin-bottom: 10px;
+    }
+}
+

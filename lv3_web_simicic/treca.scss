@@ -1,0 +1,34 @@
+$glavna: #C46210;
+$sporedna: #3B7A57;
+$font: Arial, sans-serif;
+
+%okvir {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid $glavna;
+}
+.kartica {
+    background-color: $sporedna;
+    font-family: $font;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        color: $glavna;
+    }
+
+    p {
+        color: white;
+        font-size: 18px;
+    }
+}
+.gumb-prvi {
+    @extend %okvir;
+    background-color: $glavna;
+    color: white;
+}
+.gumb-drugi {
+    @extend %okvir;
+    background-color: white;
+    color: $glavna;
+}
