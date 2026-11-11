@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="hr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Zadatak 2</title>
+        </head>
+        <body>
+            <h1>Zadatak 2</h1>
+            <script>
+                                // tri načina definiranja funkcije
+                function ispisiParametar1(parametar) {      // deklaracija funkcije
+                    console.log(parametar);
+                }
+                
+                const ispisiParametar2 = function (parametar) {   // funkcijski izraz
+                    console.log(parametar);
+                };
+                
+                const ispisiParametar3 = (parametar) => {    // streličasta funkcija (ES6)
+                    console.log(parametar);
+                };
+                
+                ispisiParametar1("Prva");
+                ispisiParametar2("Druga");
+                ispisiParametar3("Treća");
+                
+                function vratiIme(ime) {
+                    const x = ime;
+                    function f() {
+                        return x;
+                    }
+                    return f;
+                }
+                //y nije tekst, vratiIme vraća samo funkciju f ne poziva je 
+                const y = vratiIme("Hrvoje Horvat");
+                console.log(y);
+
+                //ispravljeno: predajemo ime, a drugim () pozivamo vraćenu funkciju f
+                
+                const z = vratiIme("Hrvoje Horvat")();
+                console.log(z);
+
+                //3.
+                const ime = "Pero Perić";
+
+                //4.
+                (function (x) {
+                    console.log(`Predano ime je ${x}`);
+                })(ime);
+
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Objekti u JavaScriptu</title>
+</head>
+<body>
+    <h1>Jednostavna tvorba objekta</h1>
+    <div id="psi"></div>
+ 
+    <h1>Tvorba objekta preko razreda (klase)</h1>
+    <div id="macke"></div>
+    <footer id="izmjena"></footer>
+ 
+    <script>
+      const bijeli={ime:"snjezak", pasmina:"dalmatiner", starost:8};
+      const garavi={ime:"garo", pasmina:"pudlica", starost:2};
+
+      const ispisPsa = document.getElementById("psi");
+
+      ispisPsa.innerHTML =
+        "Ime prvog psa je: " + bijeli.ime
+        + ", pasmina: " + bijeli.pasmina 
+        + " i starost: " + bijeli.starost + "<br>"; 
+
+      ispisPsa.innerHTML +=
+        "Ime drugog psa je: " + garavi.ime
+        + ", pasmina: " + garavi.pasmina 
+        + " i starost: " + garavi.starost + "<br>";
+    
+    //1.
+    const zuti = {ime: "zuco", pasmina: "labrador", starost: 6};
+    const smedi = {ime: "rex", pasmina: "njemački ovčar", starost: 8};
+
+    ispisPsa.innerHTML += `Ime trećeg psa je: ${zuti.ime}, pasmina: ${zuti.pasmina} i starost: ${zuti.starost} <br>`;
+    ispisPsa.innerHTML += `Ime četvrtog psa je: ${smedi.ime}, pasmina: ${smedi.pasmina} i starost: ${smedi.starost} <br>`;
+    </script>
+    <script src="lv_4_zadatak4.js"></script>
+</body>
+</html>

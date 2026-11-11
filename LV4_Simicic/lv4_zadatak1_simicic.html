@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="hr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Zadatak 1</title>
+        </head>
+    <body>
+        <h1>Zadatak 1 - F12</h1>
+
+
+        <script>
+            //1.
+            var godina = 2026;
+            let grad = "Osijek";
+            const fakultet = "FERIT";
+            console.log(godina, grad, fakultet);
+
+            //2.
+            godina = 2027;
+            console.log(godina);
+
+            grad = "Zagreb";
+            console.log(grad);
+
+            //const varijablu ne možemo 
+            //ponovno dodijeliti vrijednost
+            //Assignment to constant variable
+            //fakultet = "FER";
+            //console.log(fakultet);
+
+            //3.
+            const recenica = "Ovo je prvi JS string primjer"
+            console.log(recenica, "- duljina:", recenica.length);
+
+            //4.
+            console.log(recenica.toUpperCase());
+            console.log(recenica.slice(5,15));
+            console.log(recenica.replace("prvi", "drugi"));
+            console.log(recenica);
+
+            //5.
+            const vozila = new Array("avion", "auto", "vlak", "bicikl", "brod", "motocikl", "podmornica");
+
+            //6.
+            for(let i=0; i<vozila.length; i++){
+                console.log(`Vozilo broj ${i+1} je ${vozila[i]}`);
+            }
+
+            //7.
+            vozila.push("romobil");
+            for (const vozilo of vozila){
+                console.log(vozilo);
+            }
+
+        </script>
+    </body>
+
+    
+</html>
