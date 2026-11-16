@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 1</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <p id="print"></p>
+    <script>
+        //1.
+        const student = {
+            ime: "Niko",
+            prezime: "Simicic",
+            godina: 3,
+            fakultet: "FERIT"
+        };
+
+        //2.
+        const mojJSON = JSON.stringify(student);
+        document.getElementById("print").textContent = mojJSON;
+        console.log(typeof mojJSON);
+
+        //3.
+        const kopija = JSON.parse(mojJSON);
+        console.log(kopija);
+
+        //4.
+        kopija.ime = "Marko";
+        console.log("student:", student);
+        console.log("kopija:", kopija);
+    </script>
+</body>
+</html>

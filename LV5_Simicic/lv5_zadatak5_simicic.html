@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 5</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+        }
+
+        .spremnici {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .spremnik {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            font-weight: bold;
+            padding-top: 8px;
+            box-sizing: border-box;
+        }
+
+        .spremnik.aktivan {
+            background-color: white;
+        }
+
+        .kvadrati {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .kvadrat {
+            width: 100px;
+            height: 100px;
+            cursor: move;
+        }
+
+        #crveni {
+            background-color: red;
+        }
+
+        #crni {
+            background-color: black;
+        }
+
+        #poruka {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Razvrstaj boje</h1>
+
+    <div class="spremnici">
+        <div class="spremnik" id="spremnikCrno">
+            Crno
+        </div>
+
+        <div class="spremnik" id="spremnikCrveno">
+            Crveno
+        </div>
+    </div>
+
+    <div class="kvadrati">
+        <div class="kvadrat" id="crveni"></div>
+        <div class="kvadrat" id="crni"></div>
+    </div>
+
+    <p id="poruka"></p>
+
+    <script src="zadatak5.js"></script>
+
+</body>
+</html>

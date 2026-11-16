@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 2 BLOB</title>
+</head>
+<body>
+    <h1>Blob slika</h1>
+    <img id="slika" alt="Ucitana slika" width="480">
+
+    <script>
+        async function dohvatiSliku(data) {
+            try {
+                const odgovor = await fetch(data)
+                if(!odgovor.ok) throw new Error(`HTTP ${odgovor.status}`);
+
+                const blob = await odgovor.blob();
+
+                document.getElementById("slika").src = URL.createObjectURL(blob);
+            } catch (greska) {
+                console.error("Ucitavanje nije uspjelo:", greska);
+            }
+        }
+        dohvatiSliku("slika.jpg")
+    </script>
+</body>
+</html>

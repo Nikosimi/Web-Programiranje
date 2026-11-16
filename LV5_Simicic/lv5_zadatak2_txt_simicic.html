@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 2 TXT</title>
+</head>
+<body>
+    <h1>Zadatak 2 TXT - Himna</h1>
+    <pre id="tekst"></pre>
+    <script>
+        async function dohvatiTekst(data) {
+            try {
+                const odgovor = await fetch(data);
+                if (!odgovor.ok) throw new Error(`HTTP ${odgovor.status}`);
+
+                const tekst = await odgovor.text();
+
+                document.getElementById("tekst").textContent = tekst;
+            } catch (greska) {
+                console.error("Ucitavanje nije uspjelo:", greska)
+            }
+        }
+        dohvatiTekst("himna.txt");
+    </script>
+</body>
+</html>
